@@ -1,15 +1,17 @@
 {
     "version": 2,
+    "env":{
+        "MONGODB_URI":"mongodb+srv://zkhigfyexuegxhtiin:vercel@vercelmongodb.bdq8bhc.mongodb.net/?retryWrites=true&w=majority"    },
     "builds": [
         {
-            "src": "server.js",
+            "src": "package.json",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/server.js"
+            "dest": "/app.js"
         }
     ]
 }
